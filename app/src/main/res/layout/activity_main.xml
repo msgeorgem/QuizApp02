@@ -15,115 +15,141 @@
 
         tools:context="com.example.android.QuizApp.MainActivity">
 
-        <EditText
-            android:id="@+id/name"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/enter_your_name"
-            android:inputType="text|textPersonName" />
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_your_name"
+                android:inputType="text|textPersonName" />
+        </LinearLayout>
+
 
         <TextView
             style="@style/AppThemeText"
             android:text="@string/question01" />
 
-
-        <CheckBox
-            android:id="@+id/check01"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/check" />
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/check011"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sea" />
+
+            <CheckBox
+                android:id="@+id/check012"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pool" />
+
+            <CheckBox
+                android:id="@+id/check013"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/river" />
+        </LinearLayout>
+
+
 
         <TextView
             style="@style/AppThemeText"
             android:text="@string/question02" />
 
-
-        <CheckBox
-            android:id="@+id/check02"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/check" />
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/check021"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Outskits" />
+
+            <CheckBox
+                android:id="@+id/check022"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/City" />
+
+            <CheckBox
+                android:id="@+id/check023"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Vilage" />
+        </LinearLayout>
+
 
         <TextView
             style="@style/AppThemeText"
             android:text="@string/question03" />
 
 
-        <CheckBox
-            android:id="@+id/check03"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/check" />
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/check031"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Outskits" />
+
+            <CheckBox
+                android:id="@+id/check032"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/City" />
+
+            <CheckBox
+                android:id="@+id/check033"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Vilage" />
+        </LinearLayout>
+
 
         <TextView
             style="@style/AppThemeText"
             android:text="@string/question04" />
 
 
-        <CheckBox
-            android:id="@+id/check04"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/check" />
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/check041"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Outskits" />
+
+            <CheckBox
+                android:id="@+id/check042"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/City" />
+
+            <CheckBox
+                android:id="@+id/check043"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Vilage" />
+        </LinearLayout>
 
         <TextView
             style="@style/AppThemeText"
             android:text="@string/question05" />
-
-
-        <CheckBox
-            android:id="@+id/check05"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/check" />
-
-        <TextView
-            style="@style/AppThemeText"
-            android:text="@string/question06" />
-
-
-        <CheckBox
-            android:id="@+id/check06"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/check" />
-
-        <TextView
-            style="@style/AppThemeText"
-            android:text="@string/question07" />
-
-        <CheckBox
-            android:id="@+id/check07"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/check" />
-
-
-        <TextView
-            style="@style/AppThemeText"
-            android:text="@string/question08" />
-
-
-        <CheckBox
-            android:id="@+id/check08"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/check" />
-
-        <TextView
-            style="@style/AppThemeText"
-            android:text="@string/question09" />
-
-
-        <CheckBox
-            android:id="@+id/check09"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/check" />
-
-        <TextView
-            style="@style/AppThemeText"
-            android:text="@string/question10" />
 
 
         <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
@@ -167,6 +193,16 @@
             android:orientation="vertical"
             android:paddingTop="16dp">
 
+            <TextView
+                android:id="@+id/results"
+                style="@style/AppThemeText"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/results"
+                android:textColor="#000000" />
+
             <Button
                 android:id="@+id/button1"
                 android:layout_width="wrap_content"
@@ -174,24 +210,6 @@
                 android:layout_gravity="center"
                 android:onClick="submit"
                 android:text="@string/submit" />
-
-            <TextView
-                android:id="@+id/results"
-                style="@style/AppThemeText"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"
-                android:text="@string/results"
-                android:textColor="#000000" />
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:onClick="submit2"
-                android:text="@string/submit2" />
 
         </LinearLayout>
 

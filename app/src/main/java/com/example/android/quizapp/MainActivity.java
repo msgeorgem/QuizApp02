@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    int otherSports = 0;
+    private int otherSports = 0;
 
     @Override
 
@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     otherSports = 3;
                 }
-
             }
         });
     }
@@ -43,84 +42,52 @@ public class MainActivity extends AppCompatActivity {
         EditText Name = (EditText) findViewById(R.id.name);
         String enteredName = Name.getText().toString();
 
-        CheckBox swims = (CheckBox) findViewById(R.id.check01);
-        boolean doSwim = swims.isChecked();
+        CheckBox swimsSea = (CheckBox) findViewById(R.id.check011);
+        boolean sea = swimsSea.isChecked();
+        CheckBox swimsPool = (CheckBox) findViewById(R.id.check012);
+        boolean pool = swimsPool.isChecked();
+        CheckBox swimsRiver = (CheckBox) findViewById(R.id.check013);
+        boolean river = swimsRiver.isChecked();
 
-        CheckBox ridesBike = (CheckBox) findViewById(R.id.check02);
-        boolean doBike = ridesBike.isChecked();
+        CheckBox ridesBikeOutskirts2 = (CheckBox) findViewById(R.id.check021);
+        boolean outskirts2 = ridesBikeOutskirts2.isChecked();
+        CheckBox ridesBikeCity2 = (CheckBox) findViewById(R.id.check022);
+        boolean city2 = ridesBikeCity2.isChecked();
+        CheckBox ridesBikeVillage = (CheckBox) findViewById(R.id.check023);
+        boolean village2 = ridesBikeVillage.isChecked();
 
-        CheckBox Jogs = (CheckBox) findViewById(R.id.check03);
-        boolean doJog = Jogs.isChecked();
+        CheckBox JogsOutskirts3 = (CheckBox) findViewById(R.id.check031);
+        boolean outskirts3 = JogsOutskirts3.isChecked();
+        CheckBox JogsCity3 = (CheckBox) findViewById(R.id.check032);
+        boolean city3 = JogsCity3.isChecked();
+        CheckBox JogsVillage3 = (CheckBox) findViewById(R.id.check033);
+        boolean village3 = JogsVillage3.isChecked();
 
-        CheckBox playsFootball = (CheckBox) findViewById(R.id.check04);
-        boolean doFootball = playsFootball.isChecked();
+        CheckBox worksOutOutskirts4 = (CheckBox) findViewById(R.id.check041);
+        boolean outskirts4 = worksOutOutskirts4.isChecked();
+        CheckBox worksOutCity4 = (CheckBox) findViewById(R.id.check042);
+        boolean city4 = worksOutCity4.isChecked();
+        CheckBox worksOutVilage4 = (CheckBox) findViewById(R.id.check043);
+        boolean village4 = worksOutVilage4.isChecked();
 
-        CheckBox skis = (CheckBox) findViewById(R.id.check05);
-        boolean doSki = skis.isChecked();
-
-        CheckBox ridesSnowboard = (CheckBox) findViewById(R.id.check06);
-        boolean doSnowboard = ridesSnowboard.isChecked();
-
-        CheckBox playsVolleyball = (CheckBox) findViewById(R.id.check07);
-        boolean doVolleyball = playsVolleyball.isChecked();
-
-        CheckBox playsTennis = (CheckBox) findViewById(R.id.check08);
-        boolean doTennis = playsTennis.isChecked();
-
-        CheckBox worksOut = (CheckBox) findViewById(R.id.check09);
-        boolean doWorkOut = worksOut.isChecked();
-
-        int sports = checkedNumber(doSwim, doBike, doJog, doFootball, doSki, doSnowboard, doVolleyball, doTennis, doWorkOut);
+        int sports = checkedNumber(sea, pool, river, outskirts2, city2, village2, outskirts3, city3, village3, outskirts4, city4, village4);
         int AllSports = sports + otherSports;
 
         String thankYou = getString(R.string.thankYou);
         String yourResultis = getString(R.string.yourResultis);
-        String subject = (thankYou + enteredName + "\n" + yourResultis + AllSports + " out of 10");
+        String subject = (thankYou + " " + enteredName + "\n" + " " + yourResultis + " " + AllSports + " out of 15");
         Toast.makeText(this, subject, Toast.LENGTH_LONG).show();
-    }
-
-    public void submit2(View view) {
-
-        CheckBox swims = (CheckBox) findViewById(R.id.check01);
-        boolean doSwim = swims.isChecked();
-
-        CheckBox ridesBike = (CheckBox) findViewById(R.id.check02);
-        boolean doBike = ridesBike.isChecked();
-
-        CheckBox Jogs = (CheckBox) findViewById(R.id.check03);
-        boolean doJog = Jogs.isChecked();
-
-        CheckBox playsFootball = (CheckBox) findViewById(R.id.check04);
-        boolean doFootball = playsFootball.isChecked();
-
-        CheckBox skis = (CheckBox) findViewById(R.id.check05);
-        boolean doSki = skis.isChecked();
-
-        CheckBox ridesSnowboard = (CheckBox) findViewById(R.id.check06);
-        boolean doSnowboard = ridesSnowboard.isChecked();
-
-        CheckBox playsVolleyball = (CheckBox) findViewById(R.id.check07);
-        boolean doVolleyball = playsVolleyball.isChecked();
-
-        CheckBox playsTennis = (CheckBox) findViewById(R.id.check08);
-        boolean doTennis = playsTennis.isChecked();
-
-        CheckBox worksOut = (CheckBox) findViewById(R.id.check09);
-        boolean doWorkOut = worksOut.isChecked();
-
-        int sports = checkedNumber(doSwim, doBike, doJog, doFootball, doSki, doSnowboard, doVolleyball, doTennis, doWorkOut);
-        int AllSports = sports + otherSports;
 
         String displayResults1 = getString(R.string.results1);
         String displayResults2 = getString(R.string.results2);
         String displayResults3 = getString(R.string.results3);
         String displayResults4 = getString(R.string.results4);
 
-        if (AllSports <= 2) {
+        if (AllSports <= 3) {
             results1(displayResults1);
-        } else if (AllSports <= 4) {
+        } else if (AllSports <= 5) {
             results1(displayResults2);
-        } else if (AllSports <= 8) {
+        } else if (AllSports <= 9) {
             results1(displayResults3);
         } else {
             results1(displayResults4);
@@ -133,36 +100,45 @@ public class MainActivity extends AppCompatActivity {
         results1.setGravity(0x11);
     }
 
-
-    private int checkedNumber(boolean doSwim, boolean doBike, boolean doJog, boolean doFootball,
-                              boolean doSki, boolean doSnowboard, boolean doVolleyball,
-                              boolean doTennis, boolean doWorkOut) {
+    private int checkedNumber(boolean sea, boolean pool, boolean river, boolean outskirts2,
+                              boolean city2, boolean village2, boolean outskirts3,
+                              boolean city3, boolean village3, boolean outskirts4,
+                              boolean city4, boolean village4) {
         int numberOfCheckedSports = 0;
-        if (doSwim) {
+        if (sea) {
             numberOfCheckedSports += 1;
         }
-        if (doBike) {
+        if (pool) {
             numberOfCheckedSports += 1;
         }
-        if (doJog) {
+        if (river) {
             numberOfCheckedSports += 1;
         }
-        if (doFootball) {
+        if (outskirts2) {
             numberOfCheckedSports += 1;
         }
-        if (doSki) {
+        if (city2) {
             numberOfCheckedSports += 1;
         }
-        if (doSnowboard) {
+        if (village2) {
             numberOfCheckedSports += 1;
         }
-        if (doVolleyball) {
+        if (outskirts3) {
             numberOfCheckedSports += 1;
         }
-        if (doTennis) {
+        if (city3) {
             numberOfCheckedSports += 1;
         }
-        if (doWorkOut) {
+        if (village3) {
+            numberOfCheckedSports += 1;
+        }
+        if (outskirts4) {
+            numberOfCheckedSports += 1;
+        }
+        if (city4) {
+            numberOfCheckedSports += 1;
+        }
+        if (village4) {
             numberOfCheckedSports += 1;
         }
         return numberOfCheckedSports;

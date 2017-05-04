@@ -4,27 +4,27 @@
     <!-- Hint text display in the empty field for the user's name [CHAR LIMIT=20] -->
     <string name="enter_your_name">Enter your name</string>
     <!-- Hint text display the question01 in textview-->
-    <string name="question01">1. Do you swim?</string>
+    <string name="question01">1. Where do you swim?</string>
     <!-- Hint text display the answer01 in textview-->
-    <string name="check">Check if you do.</string>
+    <string name="sea">Sea</string>
+    <!-- Hint text display the answer02 in textview-->
+    <string name="pool">Pool</string>
+    <!-- Hint text display the answer03 in textview-->
+    <string name="river">River</string>
     <!-- Hint text display the question02 in textview-->
-    <string name="question02">2. Do you ride a bike?</string>
+    <string name="question02">2. Where do you ride a bike?</string>
+    <!-- Hint text display the answer01 in textview-->
+    <string name="Outskits">Outskirts</string>
+    <!-- Hint text display the answer02 in textview-->
+    <string name="City">City</string>
+    <!-- Hint text display the answer03 in textview-->
+    <string name="Vilage">Forest/Terrain</string>
     <!-- Hint text display the question03 in textview-->
-    <string name="question03">3. Do you jog?</string>
+    <string name="question03">3. Where do you jog?</string>
     <!-- Hint text display the question04 in textview-->
-    <string name="question04">4. Do you play football?</string>
-    <!-- Hint text display the question05 in textview-->
-    <string name="question05">5. Do you ski?</string>
-    <!-- Hint text display the question06 in textview-->
-    <string name="question06">6. Do you ride a snowboard?</string>
-    <!-- Hint text display the question07 in textview-->
-    <string name="question07">7. Do you play volleyball?</string>
-    <!-- Hint text display the question08 in textview-->
-    <string name="question08">8. Do you play tennis?</string>
-    <!-- Hint text display the question09 in textview-->
-    <string name="question09">9. Do you work out at the gym?</string>
+    <string name="question04">4. Where do you work out?</string>
     <!-- Hint text display the question10 in textview-->
-    <string name="question10">10. Do you exercise any other sport not mentioned above? If yes How many</string>
+    <string name="question05">5. Do you exercise any other sport not mentioned above? If yes How many</string>
     <!-- Hint text display the Yes in textview-->
     <string name="Yes">Yes</string>
     <!-- Hint text display the Yes in textview-->
