@@ -70,12 +70,27 @@ public class MainActivity extends AppCompatActivity {
         CheckBox worksOutVilage4 = (CheckBox) findViewById(R.id.check043);
         boolean village4 = worksOutVilage4.isChecked();
 
+        EditText famousSwimmer = (EditText) findViewById(R.id.edit_answer);
+        String answer = famousSwimmer.getText().toString().toLowerCase();
+        answer = answer.replace(" ", "");
+        String correctAnswer = getString(R.string.answer06).toLowerCase();
+        correctAnswer = correctAnswer.replace(" ", "");
+        int correct = 0;
+        if (answer.equals(correctAnswer)) {
+            correct = 1;
+        } else {
+            correct = 0;
+        }
+
+
+
+
         int sports = checkedNumber(sea, pool, river, outskirts2, city2, village2, outskirts3, city3, village3, outskirts4, city4, village4);
-        int AllSports = sports + otherSports;
+        int AllSports = sports + otherSports + correct;
 
         String thankYou = getString(R.string.thankYou);
         String yourResultis = getString(R.string.yourResultis);
-        String subject = (thankYou + " " + enteredName + "\n" + " " + yourResultis + " " + AllSports + " out of 15");
+        String subject = (thankYou + " " + enteredName + "\n" + " " + yourResultis + " " + AllSports + " out of 16");
         Toast.makeText(this, subject, Toast.LENGTH_LONG).show();
 
         String displayResults1 = getString(R.string.results1);
