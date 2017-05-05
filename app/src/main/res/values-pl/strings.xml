@@ -1,27 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">QuizApp</string>
-    <string name="No">Nie</string>
-    <string name="Yes">Tak</string>
-    <string name="check">Zaznacz jeśli tak</string>
-    <string name="enter_your_name">Wpisz swoje imię</string>
-    <string name="question01">1. Czy pływasz?</string>
-    <string name="question02">2. Czy jeździsz na rowerze?</string>
-    <string name="question03">3.  Czy biegasz?</string>
-    <string name="question04">4. Czy grasz w piłkę nożną?</string>
-    <string name="question05">5. Czy jeźzisz na nartach?</string>
-    <string name="question06">6. Czy jeździsz na snowboardzie?</string>
-    <string name="question07">7. Czy grasz w siatkówkę?</string>
-    <string name="question08">8.  Czy grasz w tenisa ziemnego?</string>
-    <string name="question09">9. Czy ćwiczysz na siłowni?</string>
-    <string name="question10">10. Czy ćwiczysz jakikolwiek inny sport?</string>
-    <string name="results">Sprawdź swoją ocenę</string>
-    <string name="results1">Nie jestem pod wrażeniem :( Powinieneś srpóbować więcej sportów.</string>
-    <string name="results2">Jestem pod wrażeniem :)  Jesteś bardzo aktywną osobą.</string>
-    <string name="results3">SWIETNIE! Jesteś bardzo, bardzo aktywną osobą.</string>
-    <string name="results4">!!!FANTASTYCZNIE!!! Czy jest jeszcze coś, czego nie próbowałeś?</string>
-    <string name="submit">Zatwierdź</string>
-    <string name="submit2">Sprawdź swoją ocenę</string>
-    <string name="thankYou">Dziękujemy za rozwiązanie quizu</string>
-    <string name="yourResultis">"Twój wynik to: "</string>
+
 </resources>

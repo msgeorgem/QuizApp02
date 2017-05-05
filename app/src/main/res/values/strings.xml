@@ -23,8 +23,14 @@
     <string name="question03">3. Where do you jog?</string>
     <!-- Hint text display the question04 in textview-->
     <string name="question04">4. Where do you work out?</string>
-    <!-- Hint text display the question10 in textview-->
+    <!-- Hint text display the question05 in textview-->
     <string name="question05">5. Do you exercise any other sport not mentioned above? If yes How many</string>
+    <!-- Hint text display the question06 in textview-->
+    <string name="question06">6. Who is currently the famous swimmer?</string>
+    <!-- Hint text display the answer06 in textview-->
+    <string name="answer06">Michael Phelps</string>
+    <!-- Hint text display the hint in textview-->
+    <string name="hint">enter first and last name</string>
     <!-- Hint text display the Yes in textview-->
     <string name="Yes">Yes</string>
     <!-- Hint text display the Yes in textview-->
