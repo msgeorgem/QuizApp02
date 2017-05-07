@@ -4,7 +4,7 @@
     <!-- Hint text display in the empty field for the user's name [CHAR LIMIT=20] -->
     <string name="enter_your_name">Enter your name</string>
     <!-- Hint text display the question01 in textview-->
-    <string name="question01">1. Who is the tennis player?</string>
+    <string name="question01">1. Who is a tennis player?</string>
     <!-- Hint text display the answer011 in textview-->
     <string name="answer011">Rafael Nadal</string>
     <!-- Hint text display the answer012 in textview-->
