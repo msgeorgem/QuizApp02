@@ -4,27 +4,45 @@
     <!-- Hint text display in the empty field for the user's name [CHAR LIMIT=20] -->
     <string name="enter_your_name">Enter your name</string>
     <!-- Hint text display the question01 in textview-->
-    <string name="question01">1. Where do you swim?</string>
-    <!-- Hint text display the answer01 in textview-->
-    <string name="sea">Sea</string>
-    <!-- Hint text display the answer02 in textview-->
-    <string name="pool">Pool</string>
-    <!-- Hint text display the answer03 in textview-->
-    <string name="river">River</string>
+    <string name="question01">1. Who is a tennis player?</string>
+    <!-- Hint text display the answer011 in textview-->
+    <string name="answer011">Rafael Nadal</string>
+    <!-- Hint text display the answer012 in textview-->
+    <string name="answer012">Robbie Doe</string>
+    <!-- Hint text display the answer013 in textview-->
+    <string name="answer013">Andy Murray</string>
     <!-- Hint text display the question02 in textview-->
-    <string name="question02">2. Where do you ride a bike?</string>
-    <!-- Hint text display the answer01 in textview-->
-    <string name="Outskits">Outskirts</string>
-    <!-- Hint text display the answer02 in textview-->
-    <string name="City">City</string>
-    <!-- Hint text display the answer03 in textview-->
-    <string name="Vilage">Forest/Terrain</string>
+    <string name="question02">2. Who is a ski jumper?</string>
+    <!-- Hint text display the answer021 in textview-->
+    <string name="answer021">Stefan Kraft</string>
+    <!-- Hint text display the answer022 in textview-->
+    <string name="answer022">Noriaki Kasai</string>
+    <!-- Hint text display the answer023 in textview-->
+    <string name="answer023">Hirscher Marcel</string>
     <!-- Hint text display the question03 in textview-->
-    <string name="question03">3. Where do you jog?</string>
+    <string name="question03">3. Who is not a famous singer?</string>
+    <!-- Hint text display the answer031 in textview-->
+    <string name="answer031">Robbie Wiliams</string>
+    <!-- Hint text display the answer032 in textview-->
+    <string name="answer032">Mike Johnson</string>
+    <!-- Hint text display the answer033 in textview-->
+    <string name="answer033">Tom Hardy</string>
     <!-- Hint text display the question04 in textview-->
-    <string name="question04">4. Where do you work out?</string>
-    <!-- Hint text display the question05 in textview-->
-    <string name="question05">5. Do you exercise any other sport not mentioned above? If yes How many</string>
+    <string name="question04">4. Who is not a football player?</string>
+    <!-- Hint text display the answer041 in textview-->
+    <string name="answer041">Stefan Kraft</string>
+    <!-- Hint text display the answer042 in textview-->
+    <string name="answer042">Marcin Gortat</string>
+    <!-- Hint text display the answer043 in textview-->
+    <string name="answer043">Lionel Messi</string>
+    <string name="question05">5. Who is the reigning champion in football?</string>
+    <!-- Hint text display the answer051 in radiobutton -->
+    <string name="answer051">Germany</string>
+    <!-- Hint text display the answer051 in radiobutton -->
+    <string name="answer052">England</string>
+    <!-- Hint text display the answer051 in radiobutton -->
+    <string name="answer053">Brasil</string>
+
     <!-- Hint text display the question06 in textview-->
     <string name="question06">6. Who is currently the famous swimmer?</string>
     <!-- Hint text display the answer06 in textview-->
@@ -41,10 +59,10 @@
     <string name="yourResultis">Your result is</string>
 
     <string name="results">Evaluate your interests</string>
-    <string name="results1">I am not impressed :( \n You should try some sports</string>
-    <string name="results2">I am impressed :) \n You are very active person</string>
-    <string name="results3">AWESOME! \n You are very, very active person</string>
-    <string name="results4">!!!MARVELOUS!!! \n Is there anything you have not tried yet?</string>
+    <string name="results1">I am not impressed :( </string>
+    <string name="results2">I am impressed :) </string>
+    <string name="results3">AWESOME!</string>
+    <string name="results4">!!!MARVELOUS!!! \n Is there anything you do not know?</string>
 
 
 </resources>
