@@ -42,19 +42,19 @@
                 android:id="@+id/check011"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/sea" />
+                android:text="@string/answer011" />
 
             <CheckBox
                 android:id="@+id/check012"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/pool" />
+                android:text="@string/answer012" />
 
             <CheckBox
                 android:id="@+id/check013"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/river" />
+                android:text="@string/answer013" />
         </LinearLayout>
 
 
@@ -72,19 +72,19 @@
                 android:id="@+id/check021"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Outskits" />
+                android:text="@string/answer021" />
 
             <CheckBox
                 android:id="@+id/check022"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/City" />
+                android:text="@string/answer022" />
 
             <CheckBox
                 android:id="@+id/check023"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Vilage" />
+                android:text="@string/answer023" />
         </LinearLayout>
 
 
@@ -102,19 +102,19 @@
                 android:id="@+id/check031"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Outskits" />
+                android:text="@string/answer031" />
 
             <CheckBox
                 android:id="@+id/check032"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/City" />
+                android:text="@string/answer032" />
 
             <CheckBox
                 android:id="@+id/check033"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Vilage" />
+                android:text="@string/answer033" />
         </LinearLayout>
 
 
@@ -132,19 +132,19 @@
                 android:id="@+id/check041"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Outskits" />
+                android:text="@string/answer041" />
 
             <CheckBox
                 android:id="@+id/check042"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/City" />
+                android:text="@string/answer042" />
 
             <CheckBox
                 android:id="@+id/check043"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Vilage" />
+                android:text="@string/answer043" />
         </LinearLayout>
 
         <TextView
@@ -163,25 +163,19 @@
                 android:id="@+id/radio_0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/No" />
+                android:text="@string/answer051" />
 
             <RadioButton
                 android:id="@+id/radio_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1" />
+                android:text="@string/answer052" />
 
             <RadioButton
                 android:id="@+id/radio_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2" />
-
-            <RadioButton
-                android:id="@+id/radio_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3" />
+                android:text="@string/answer053" />
 
 
         </RadioGroup>
@@ -194,7 +188,8 @@
             android:id="@+id/edit_answer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint" />
+            android:hint="@string/hint"
+            android:inputType="text" />
 
         <LinearLayout
             android:layout_width="match_parent"

@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private int otherSports = 0;
+    private int otherSports;
 
     @Override
 
@@ -26,13 +26,9 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // find which radio button is selected
                 if (checkedId == R.id.radio_0) {
-                    otherSports = 0;
-                } else if (checkedId == R.id.radio_1) {
                     otherSports = 1;
-                } else if (checkedId == R.id.radio_2) {
-                    otherSports = 2;
                 } else {
-                    otherSports = 3;
+                    otherSports = 0;
                 }
             }
         });
@@ -42,55 +38,54 @@ public class MainActivity extends AppCompatActivity {
         EditText Name = (EditText) findViewById(R.id.name);
         String enteredName = Name.getText().toString();
 
-        CheckBox swimsSea = (CheckBox) findViewById(R.id.check011);
-        boolean sea = swimsSea.isChecked();
-        CheckBox swimsPool = (CheckBox) findViewById(R.id.check012);
-        boolean pool = swimsPool.isChecked();
-        CheckBox swimsRiver = (CheckBox) findViewById(R.id.check013);
-        boolean river = swimsRiver.isChecked();
+        CheckBox answer011 = (CheckBox) findViewById(R.id.check011);
+        boolean aAnswer011 = answer011.isChecked();
+        CheckBox answer012 = (CheckBox) findViewById(R.id.check012);
+        boolean aAnswer012 = answer012.isChecked();
+        CheckBox answer013 = (CheckBox) findViewById(R.id.check013);
+        boolean aAnswer013 = answer013.isChecked();
 
-        CheckBox ridesBikeOutskirts2 = (CheckBox) findViewById(R.id.check021);
-        boolean outskirts2 = ridesBikeOutskirts2.isChecked();
-        CheckBox ridesBikeCity2 = (CheckBox) findViewById(R.id.check022);
-        boolean city2 = ridesBikeCity2.isChecked();
-        CheckBox ridesBikeVillage = (CheckBox) findViewById(R.id.check023);
-        boolean village2 = ridesBikeVillage.isChecked();
+        CheckBox answer021 = (CheckBox) findViewById(R.id.check021);
+        boolean aAnswer021 = answer021.isChecked();
+        CheckBox answer022 = (CheckBox) findViewById(R.id.check022);
+        boolean aAnswer022 = answer022.isChecked();
+        CheckBox answer023 = (CheckBox) findViewById(R.id.check023);
+        boolean aAnswer023 = answer023.isChecked();
 
-        CheckBox JogsOutskirts3 = (CheckBox) findViewById(R.id.check031);
-        boolean outskirts3 = JogsOutskirts3.isChecked();
-        CheckBox JogsCity3 = (CheckBox) findViewById(R.id.check032);
-        boolean city3 = JogsCity3.isChecked();
-        CheckBox JogsVillage3 = (CheckBox) findViewById(R.id.check033);
-        boolean village3 = JogsVillage3.isChecked();
+        CheckBox answer031 = (CheckBox) findViewById(R.id.check031);
+        boolean aAnswer031 = answer031.isChecked();
+        CheckBox answer032 = (CheckBox) findViewById(R.id.check032);
+        boolean aAnswer032 = answer032.isChecked();
+        CheckBox answer033 = (CheckBox) findViewById(R.id.check033);
+        boolean aAnswer033 = answer033.isChecked();
 
-        CheckBox worksOutOutskirts4 = (CheckBox) findViewById(R.id.check041);
-        boolean outskirts4 = worksOutOutskirts4.isChecked();
-        CheckBox worksOutCity4 = (CheckBox) findViewById(R.id.check042);
-        boolean city4 = worksOutCity4.isChecked();
-        CheckBox worksOutVilage4 = (CheckBox) findViewById(R.id.check043);
-        boolean village4 = worksOutVilage4.isChecked();
+        CheckBox answer041 = (CheckBox) findViewById(R.id.check041);
+        boolean aAnswer041 = answer041.isChecked();
+        CheckBox answer042 = (CheckBox) findViewById(R.id.check042);
+        boolean aAnswer042 = answer042.isChecked();
+        CheckBox answer043 = (CheckBox) findViewById(R.id.check043);
+        boolean aAnswer043 = answer043.isChecked();
 
         EditText famousSwimmer = (EditText) findViewById(R.id.edit_answer);
-        String answer = famousSwimmer.getText().toString().toLowerCase();
+        String answer = famousSwimmer.getText().toString();
         answer = answer.replace(" ", "");
-        String correctAnswer = getString(R.string.answer06).toLowerCase();
+        String correctAnswer = getString(R.string.answer06);
         correctAnswer = correctAnswer.replace(" ", "");
         int correct = 0;
-        if (answer.equals(correctAnswer)) {
+        if (answer.equalsIgnoreCase(correctAnswer)) {
             correct = 1;
         } else {
             correct = 0;
         }
 
 
-
-
-        int sports = checkedNumber(sea, pool, river, outskirts2, city2, village2, outskirts3, city3, village3, outskirts4, city4, village4);
+        int sports = checkedNumber(aAnswer011, aAnswer012, aAnswer013, aAnswer021, aAnswer022, aAnswer023,
+                aAnswer031, aAnswer032, aAnswer033, aAnswer041, aAnswer042, aAnswer043);
         int AllSports = sports + otherSports + correct;
 
         String thankYou = getString(R.string.thankYou);
         String yourResultis = getString(R.string.yourResultis);
-        String subject = (thankYou + " " + enteredName + "\n" + " " + yourResultis + " " + AllSports + " out of 16");
+        String subject = (thankYou + " " + enteredName + "\n" + " " + yourResultis + " " + AllSports + " out of 10");
         Toast.makeText(this, subject, Toast.LENGTH_LONG).show();
 
         String displayResults1 = getString(R.string.results1);
@@ -115,46 +110,45 @@ public class MainActivity extends AppCompatActivity {
         results1.setGravity(0x11);
     }
 
-    private int checkedNumber(boolean sea, boolean pool, boolean river, boolean outskirts2,
-                              boolean city2, boolean village2, boolean outskirts3,
-                              boolean city3, boolean village3, boolean outskirts4,
-                              boolean city4, boolean village4) {
+    private int checkedNumber(boolean answer011, boolean answer012, boolean answer013, boolean answer021,
+                              boolean answer022, boolean answer023, boolean answer031, boolean answer032, boolean answer033, boolean answer041,
+                              boolean answer042, boolean answer043) {
         int numberOfCheckedSports = 0;
-        if (sea) {
+        if (answer011) {
             numberOfCheckedSports += 1;
         }
-        if (pool) {
+        if (answer012) {
+            numberOfCheckedSports -= 1;
+        }
+        if (answer013) {
             numberOfCheckedSports += 1;
         }
-        if (river) {
+        if (answer021) {
             numberOfCheckedSports += 1;
         }
-        if (outskirts2) {
+        if (answer022) {
             numberOfCheckedSports += 1;
         }
-        if (city2) {
+        if (answer023) {
+            numberOfCheckedSports -= 1;
+        }
+        if (answer031) {
+            numberOfCheckedSports -= 1;
+        }
+        if (answer032) {
             numberOfCheckedSports += 1;
         }
-        if (village2) {
+        if (answer033) {
             numberOfCheckedSports += 1;
         }
-        if (outskirts3) {
+        if (answer041) {
             numberOfCheckedSports += 1;
         }
-        if (city3) {
+        if (answer042) {
             numberOfCheckedSports += 1;
         }
-        if (village3) {
-            numberOfCheckedSports += 1;
-        }
-        if (outskirts4) {
-            numberOfCheckedSports += 1;
-        }
-        if (city4) {
-            numberOfCheckedSports += 1;
-        }
-        if (village4) {
-            numberOfCheckedSports += 1;
+        if (answer043) {
+            numberOfCheckedSports -= 1;
         }
         return numberOfCheckedSports;
     }
