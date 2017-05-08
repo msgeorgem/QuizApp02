@@ -44,7 +44,7 @@
     <string name="answer053">Brasil</string>
 
     <!-- Hint text display the question06 in textview-->
-    <string name="question06">6. Who is currently the famous swimmer?</string>
+    <string name="question06">6. Who is currently the most famous swimmer?</string>
     <!-- Hint text display the answer06 in textview-->
     <string name="answer06">Michael Phelps</string>
     <!-- Hint text display the hint in textview-->
